@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+ //задача begin9
+//декларація зміних
+//перевод на руский 
+    
+    setlocale(LC_ALL, "RU");
+    double a, b;
+
+
+    // Ввод двух ненулевых чисел
+    std::cout << "Введите первое ненулевое число: ";
+    std::cin >> a;
+    std::cout << "Введите второе ненулевое число: ";
+    std::cin >> b;
+
+    // Проверка на ненулевые значения
+    if (a == 0 || b == 0) {
+        std::cout << "Числа должны быть ненулевыми!" << std::endl;
+        return 1;
+    }
+
+    // Вычисление квадратов чисел
+    double square_a = a * a;
+    double square_b = b * b;
+
+    // Вычисление суммы, разности, произведения и частного квадратов
+    double sum = square_a + square_b;
+    double difference = square_a - square_b;
+    double product = square_a * square_b;
+    double quotient = square_a / square_b;
+
+    // Вывод результатов
+    std::cout << "Сумма квадратов: " << sum << std::endl;
+    std::cout << "Разность квадратов: " << difference << std::endl;
+    std::cout << "Произведение квадратов: " << product << std::endl;
+    std::cout << "Частное квадратов: " << quotient << std::endl;
+
+    return 0;
+}
